@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: hsl(0, 0%, 9%);
+  --strongWhite: white;
+  --white: #fbfbfb;
+  --turquois: hsl(178, 62%, 48%);
+  --gris: #f4f3f8;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--strongWhite);
+}
+li {
+  list-style: none;
+}
+
+img {
+  width: 300px;
+}
+
+nav {
+  background: var(--black);
+  color: var(--white);
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Nom {
+  text-transform: uppercase;
+  width: 139px;
+  max-width: 1450px;
+}
+
+.Nom > p {
+  /* text-align: center; */
+  text-align: right;
+}
+
+span {
+  color: var(--turquois);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+ul li:first-child {
+  color: var(--turquois);
+}
+li {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.main-space {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+header {
+  display: grid;
+
+  grid-template-columns: 65% 35%;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+.presentation {
+  width: 100%;
+  text-align: center;
+}
+.presentation p {
+  font-size: 2.2em;
+  font-weight: 550;
+  text-transform: capitalize;
+  line-height: 1.3;
+}
+.img-presentation > img {
+  width: 100%;
+}
+.presentation button,
+.btn-cv button {
+  padding: 10px;
+  width: 150px;
+  background: var(--turquois);
+  border: none;
+  color: var(--strongWhite);
+  text-transform: capitalize;
+  border-radius: 4px;
+  margin: 15px 0px 0px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.apropos-section {
+  background: var(--gris);
+  height: 500px;
+  border-bottom: 2px solid var(--black);
+}
+.main-title {
+  width: 100%;
+}
+.main-title h2 {
+  padding: 25px 0px;
+  text-align: center;
+  font-size: 1.7em;
+  color: var(--turquois);
+}
+
+.position-flex {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.paragraph-p {
+  width: 50%;
+  margin: 19px 0;
+}
+.paragraph-p p {
+  line-height: 1.3;
+  font-size: 1em;
+}
+
+.btn-cv button > a {
+  text-decoration: none;
+  color: var(--strongWhite);
+}
+.btn-cv button {
+  margin: 15px 0;
+}
+
+.right-img {
+  border: solid 4px var(--turquois);
+  border-radius: 1000px;
+  height: 250px;
+  width: 450px;
+  min-width: 250px;
+}
+.right-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1000px;
+  object-fit: cover;
+}
